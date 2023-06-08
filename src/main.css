@@ -1,0 +1,60 @@
+body {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.breed-select{
+    font-family: Montserrat;
+    background-color:aliceblue;
+    width: 300px;   
+}
+
+img {
+    box-sizing: border-box;
+    display: block;
+    block-size: cover;
+}
+
+.cat-info-wrap{
+    width: 800px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.cat-info-text{
+    margin-left: 30px;
+}
+
+.loader {
+    display: block;
+    position: relative;    
+    width: 80%;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.loader::after {
+    content: '';
+    width: 40px;
+    height: 2px;
+    background: #FF3D00;
+    position: absolute;
+    top: 17px;
+    left: 0;
+    box-sizing: border-box;
+    animation: animloader 2s linear infinite;
+}
+
+@keyframes animloader {
+    0% {
+        left: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        left: 100%;
+        transform: translateX(0%);
+    }
+}
